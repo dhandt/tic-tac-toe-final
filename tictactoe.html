@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang ="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <script src ="tictactoe.js"></script>
+    <link href="tictactoe.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <button type="button" onclick="location.reload()">New Game?</button>
+    </nav>
+    <div>
+      <!--These are the clickable boxes which you provided me, I take minimal credit here-->
+      <img id="area0" src="images/empty.png" border="5" onclick="squareClick(0);"/>
+      <img id="area1" src="images/empty.png" border="5" onclick="squareClick(1);"/>
+      <img id="area2" src="images/empty.png" border="5" onclick="squareClick(2);"/>
+      </br>
+      <img id="area3" src="images/empty.png" border="5" onclick="squareClick(3);"/>
+      <img id="area4" src="images/empty.png" border="5" onclick="squareClick(4);"/>
+      <img id="area5" src="images/empty.png" border="5" onclick="squareClick(5);"/>
+      </br>
+      <img id="area6" src="images/empty.png" border="5" onclick="squareClick(6);"/>
+      <img id="area7" src="images/empty.png" border="5" onclick="squareClick(7);"/>
+      <img id="area8" src="images/empty.png" border="5" onclick="squareClick(8);"/>
+    </div>  
+    <script language="javascript" type="text/javascript">
+      // Declaring the variable to keep track of which player's turn it is.
+      var xTurn = true;
+      // For remembering which square was clicked
+      var squareClicked = [false, false, false, false, false, false, false, false, false];
+      // This is to tell who clicked which square
+      var whoClicked = [11, 10, 3, 4, 5, 6, 7, 8, 9];
+    </script>
+    <noscript>
+      <p>Please enable javascript.</p>
+    </noscript>
+  </body>
+</html>
